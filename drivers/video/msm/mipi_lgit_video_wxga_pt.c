@@ -55,7 +55,7 @@ static int __init mipi_video_lgit_wxga_pt_init(void)
 	pinfo.type = MIPI_VIDEO_PANEL;
 	pinfo.pdest = DISPLAY_1;
 	pinfo.wait_cycle = 0;
-	pinfo.bpp = 24;
+	pinfo.bpp = 32;
 	pinfo.lcdc.h_back_porch = 180;
 	pinfo.lcdc.h_front_porch = 8;
 	pinfo.lcdc.h_pulse_width = 4;
@@ -90,7 +90,7 @@ static int __init mipi_video_lgit_wxga_pt_init(void)
 	pinfo.mipi.t_clk_pre = 0x36;
 	pinfo.clk_rate = 453770000;
 	pinfo.mipi.esc_byte_ratio = 6;
-	pinfo.mipi.frame_rate = 60;
+	pinfo.mipi.frame_rate = 65;
 	pinfo.mipi.stream = 0;
 	pinfo.mipi.mdp_trigger = 0;
 	pinfo.mipi.dma_trigger = DSI_CMD_TRIGGER_SW;
